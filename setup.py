@@ -34,4 +34,7 @@ setup(
     license='LICENSE.txt',
     description='Library to interface with Project Gutenberg',
     long_description=open('README.rst').read(),
-    install_requires=install_requires())
+    install_requires=install_requires(),
+    dependency_links= [
+        "git+https://github.com/RDFLib/rdflib-sqlalchemy.git@20fbf1fbbdbc53917bfd7554f38d22d08e71e225"
+    ])
